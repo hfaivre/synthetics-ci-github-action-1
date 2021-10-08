@@ -10,4 +10,4 @@ jobs:
         with:
           api_key: ${{secrets.DD_API_KEY}}
           app_key: ${{secrets.DD_APP_KEY}}
-          public_ids: "624-695-y8r, cjt-y2x-9ht"
+          public_ids: "624-695-y8r, 6kv-mn3-r38"
