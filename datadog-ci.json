@@ -1,7 +1,3 @@
 {
-    "tests": [
-        {
-            "id": "6kv-mn3-r38"
-        }
-    ]
+    "files": "failing_tests.synthetics.json"
 }
