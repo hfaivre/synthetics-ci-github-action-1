@@ -1,0 +1,12 @@
+name: synthetics-tests
+
+on: [push, pull_request]
+
+jobs:
+  run:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: DataDog/github-action-synthetics-ci@db93620b1425b80aadf67a992b37b8a284fda212
+        with:
+          api_key: ${{secrets.DD_API_KEY}}
+          app_key: ${{secrets.DD_APP_KEY}}
