@@ -1,5 +1,5 @@
 import chalk from 'chalk'
-import {synthetics} from '@datadog/datadog-ci'
+import {synthetics} from '../../datadog-ci'
 
 export const reportCiError = (error: synthetics.CiError, reporter: synthetics.MainReporter): void => {
   switch (error.code) {

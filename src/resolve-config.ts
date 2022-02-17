@@ -1,5 +1,6 @@
 import * as core from '@actions/core'
-import {synthetics, utils} from '@datadog/datadog-ci'
+//import {utils} from '../../datadog-ci/src/commands/synthetics/'
+import {synthetics, utils} from '../../datadog-ci'
 import deepExtend from 'deep-extend'
 
 import {removeUndefinedValues} from './utils'

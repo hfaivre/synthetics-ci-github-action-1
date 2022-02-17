@@ -1,4 +1,4 @@
-import {synthetics} from '@datadog/datadog-ci'
+import {synthetics} from '../../datadog-ci'
 
 export const config: synthetics.SyntheticsCIConfig = {
   apiKey: '',
