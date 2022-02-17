@@ -431,9 +431,7 @@ function createBridge(otherInit, registerProxy) {
 				case 'arguments':
 				case 'caller':
 				case 'callee':
-					if (typeof object === 'function' && thisOtherHasOwnProperty(object, key)) {
-						throw thisThrowCallerCalleeArgumentsAccess(key);
-					}
+					if (thisOtherHasOwnProperty(object, key)) throw thisThrowCallerCalleeArgumentsAccess(key);
 					break;
 			}
 			let ret; // @other(unsafe)
