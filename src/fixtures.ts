@@ -14,6 +14,7 @@ export const config: synthetics.SyntheticsCIConfig = {
   publicIds: [],
   subdomain: 'app',
   tunnel: false,
+  variableStrings: []
 }
 
 export const mockReporter: synthetics.MainReporter = {
