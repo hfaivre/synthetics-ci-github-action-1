@@ -1,5 +1,5 @@
 import chalk from 'chalk'
-import {synthetics} from '@datadog/datadog-ci'
+import {synthetics} from '../../datadog-ci'
 
 export const reportCiError = (error: synthetics.CiError, reporter: synthetics.MainReporter): void => {
   switch (error.code) {
@@ -22,7 +22,7 @@ export const reportCiError = (error: synthetics.CiError, reporter: synthetics.Ma
       reporter.error(`\n${chalk.bgRed.bold(' ERROR: unable to start tunnel')}\n${error.message}\n\n`)
       break
     case 'TRIGGER_TESTS_FAILED':
-      reporter.error(`\n${chalk.bgRed.bold(' ERROR: unable to trigger tests')}\n${error.message}\n\n`)
+      reporter.error(`\n${chalk.bgRed.bold(' ERROR: unable to trigger tests')}\n${error}\n\n`)
       break
     case 'UNAVAILABLE_TEST_CONFIG':
       reporter.error(

@@ -3,7 +3,7 @@ import {BaseContext} from 'clipanion'
 import {renderResults} from './process-results'
 import {reportCiError} from './report-ci-error'
 import {resolveConfig} from './resolve-config'
-import {synthetics} from '@datadog/datadog-ci'
+import {synthetics} from '../../datadog-ci'
 
 const run = async (): Promise<void> => {
   const context: BaseContext = {

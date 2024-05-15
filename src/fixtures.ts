@@ -1,4 +1,4 @@
-import {synthetics} from '@datadog/datadog-ci'
+import {synthetics} from '../../datadog-ci'
 
 export const config: synthetics.SyntheticsCIConfig = {
   apiKey: '',
@@ -14,6 +14,7 @@ export const config: synthetics.SyntheticsCIConfig = {
   publicIds: [],
   subdomain: 'app',
   tunnel: false,
+  variableStrings: []
 }
 
 export const mockReporter: synthetics.MainReporter = {

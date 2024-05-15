@@ -1,4 +1,4 @@
-import {synthetics} from '@datadog/datadog-ci'
+import {synthetics} from '../../datadog-ci'
 
 export const renderResults = (
   results: {[key: string]: synthetics.PollResult[]},
